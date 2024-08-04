@@ -1,0 +1,35 @@
+2024-08-05 00:22:20,520 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2024-08-05 00:22:20,521 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\.venv\Lib\site-packages\instabot\bot\bot.py
+2024-08-05 00:22:20,523 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2024-08-05 00:22:21,069 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2024-08-05 00:22:21,721 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2024-08-05 00:22:22,011 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2024-08-05 00:22:22,327 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2024-08-05 00:22:29,385 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [400]>
+2024-08-05 00:22:29,386 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://i.instagram.com/challenge/AXG2vszUIhM2QjBau2722YihvRrYOrzo-KCrGwToyWwy4g_-yUnmSO00fhQYZ6GsN0ypTZE/AfyHL1QVF9PjfZfYJ5Jvn4ZQOk2Q3s_z1qoImXEpuV7mKAgYXmjpktyvvJJqtUb1RhN6TO8l1IYKwQ/","api_path":"/challenge/AXG2vszUIhM2QjBau2722YihvRrYOrzo-KCrGwToyWwy4g_-yUnmSO00fhQYZ6GsN0ypTZE/AfyHL1QVF9PjfZfYJ5Jvn4ZQOk2Q3s_z1qoImXEpuV7mKAgYXmjpktyvvJJqtUb1RhN6TO8l1IYKwQ/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail","error_type":"checkpoint_challenge_required"}'
+2024-08-05 00:22:29,387 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2024-08-05 00:22:29,387 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2024-08-05 00:22:29,388 - instabot version: 0.117.0 (api) - INFO - Error type: checkpoint_challenge_required
+2024-08-05 00:23:11,741 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:11,742 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_1_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:15,137 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:15,138 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_2_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:19,249 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:19,251 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_3_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:22,012 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:22,014 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_4_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:23,648 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:23,649 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_5_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:25,502 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:25,504 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_6_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:28,833 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:28,834 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_7_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:31,118 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:31,122 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_8_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:33,846 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:33,848 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_9_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:36,070 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2024-08-05 00:23:36,071 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot\imgs\aug\5\downloaded_image_aug_5_10_00_22_39.jpg' is not uploaded.
+2024-08-05 00:23:36,075 - instabot version: 0.117.0 (bot) - INFO - Bot stopped. Worked: 0:01:15.555334
+2024-08-05 00:23:36,077 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\Asus\Documents\Vishva_Projects\AI\Web_Scraper_bot/config/goofballmaxer.checkpoint
+2024-08-05 00:23:36,078 - instabot version: 0.117.0 (bot) - INFO - Total requests: 5
