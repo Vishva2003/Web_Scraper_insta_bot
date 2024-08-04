@@ -5,9 +5,6 @@ from datetime import datetime
 import logging
 from dotenv import load_dotenv
 
-webscraper = Webscrap('https://indianexpress.com/section/india/?ref=newlist_hp', 'title' ,'lazyloading')
-print(webscraper.webscrap())
-
 load_dotenv()
 
 logging.basicConfig(level=logging.INFO)
@@ -35,25 +32,29 @@ except Exception as e:
     logger.error(f'Failed to login to Instagram: {e}')
     exit()
 
+url = 'https://indianexpress.com/section/india/?ref=newlist_hp'
+title_dom = 'title'
+img_dom = '//*[@class="lazyloading"]'
 
-base_path ='C:\\Users\\Asus\\Documents\\Vishva_Projects\\AI\\Web_Scraper_bot\\imgs'
+web_scraper = Webscrap(url, title_dom, img_dom)
+results = web_scraper.webscrap()
+
 Today = datetime.now()
-month = Today.strftime('%b').lower()
+month = str(Today.strftime('%b').lower())
 day = str(Today.day)
-day_path = os.path.join(base_path, month, day)
 
-if not os.path.exists(day_path):
-    logger.error(f'Directory {day_path} does not exist.')
+if not results:
+    logger.error("No data retrieved from web scraping.")
+    bot.logout()
     exit()
 
-image_files = [f for f in os.listdir(day_path) if f.endswith('.jpg')]
-
-for image_file in image_files:
-    image_path = os.path.join(day_path, image_file)
-    caption = f"Posted on {month.capitalize()} {day} using #InstaBot" 
+for item in results:
+    title = item['title']
+    image_path = item['file_name']
+    caption = f"{title}\n\nPosted on {month.capitalize()} {day} using #InstaBot"
     try:
         if bot.upload_photo(image_path, caption=caption):
-            logger.info(f'Successfully posted: {image_path}')
+            logger.info(f'Successfully posted: {image_path} with title: {title}')
         else:
             logger.error(f'Failed to post {image_path}.')
     except Exception as e:
