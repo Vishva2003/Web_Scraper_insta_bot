@@ -65,7 +65,7 @@ class Webscrap:
                         file_name = os.path.join(day_path, f'downloaded_image_{month}_{day}_{index+1}_{time_str}.jpg')
                         with open(file_name, 'wb') as file:
                             file.write(response.content)
-                        print(f'Successfully downloaded: {file_name} with title: {title}')
+                        print(f'Successfully downloaded: {file_name} with title: {title}\n')
                         results.append({'title': title, 'file_name': file_name})
                     else:
                         print(f'Failed to retrieve image, status code: {response.status_code}')
@@ -77,7 +77,7 @@ class Webscrap:
         driver.quit()
         return results
 
-'''# Example usage
+# Example usage
 if __name__ == "__main__":
     url = 'https://indianexpress.com/section/india/?ref=newlist_hp'
     title_dom = 'title'
@@ -85,4 +85,4 @@ if __name__ == "__main__":
 
     web_scrap = Webscrap(url, title_dom, img_dom)
     results = web_scrap.webscrap()
-    print(results)'''
+    print(results)
